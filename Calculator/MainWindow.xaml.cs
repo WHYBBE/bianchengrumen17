@@ -54,8 +54,9 @@ namespace Calculator
             symbol = Symbol.None;
             Point = false;
             IsCalculated = false;
-            FirstNumber = "0";
+            FirstNumber = null;
             SecondNumber = null;
+            Screen.Content = "0";
         }
         private void Number_Click(object sender, RoutedEventArgs e)
         {
