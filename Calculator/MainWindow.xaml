@@ -34,12 +34,17 @@
             </Style>
             <Style x:Key="ScreenContent" TargetType="Label">
                 <Style.Triggers>
-                    <Trigger Property="Content" Value="正无穷大">
+                    <Trigger Property="Content" Value="NaN">
                         <Trigger.Setters>
                             <Setter Property="Foreground" Value="Red"/>
                         </Trigger.Setters>
                     </Trigger>
-                    <Trigger Property="Content" Value="负无穷大">
+                    <Trigger Property="Content" Value="∞">
+                        <Trigger.Setters>
+                            <Setter Property="Foreground" Value="Red"/>
+                        </Trigger.Setters>
+                    </Trigger>
+                    <Trigger Property="Content" Value="-∞">
                         <Trigger.Setters>
                             <Setter Property="Foreground" Value="Red"/>
                         </Trigger.Setters>
